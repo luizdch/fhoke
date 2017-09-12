@@ -1,0 +1,29 @@
+fullBackgroundImage($urlPath = false) {
+   if $urlPath {
+      background-image url($urlPath)
+   }
+   background-size cover
+   background-position center
+   background-repeat no-repeat
+}
+preserveAspectRatio($value1, $value2) {
+   display block !important  // com display flex o elemento fica com height 0 no firefox
+   &:before {
+      content ''
+      display block
+      float left
+      padding-bottom ($value2 * 100% / $value1)
+   }
+   &:after {
+      content ''
+      display block
+      clear both
+   }
+}
+fullBox() {
+   position absolute
+   width 100%
+   height 100%
+   top 0
+   left 0
+}

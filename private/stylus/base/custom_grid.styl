@@ -1,0 +1,9 @@
+$grid-width = 1800px
+$grid-columns = 12
+
+col($columns) {
+   $columns * 100% / $grid-columns
+}
+px($percentage) {
+   unit($percentage * $grid-width / 100, 'px')
+}

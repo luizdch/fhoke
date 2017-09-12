@@ -1,0 +1,87 @@
+.ourExpertise {
+   min-height 1px
+   @media $lg {
+      padding $space-5
+   }
+   @media $md {
+      padding $space-4
+   }
+   @media $sm {
+      padding $space-3
+   }
+   @media (max-width 400px) {
+      padding $space-2
+   }
+
+
+
+
+
+   .contentContainer {
+      min-height 1px
+      background-color $color-white1
+      box-shadow 0 0 50px $color-red1
+      @media $md-lg {
+         padding $space-5
+      }
+      @media $sm {
+         padding $space-2
+      }
+   }
+
+
+
+
+
+   .contentContainer > .textContainer {
+      max-width 1000px
+   }
+   .contentContainer > .textContainer p {
+      @media $md-lg {
+         padding-left 25%
+      }
+   }
+
+
+
+
+
+   .expertiseContainer {
+      min-height 1px
+      margin-top $space-5 * 2
+      @media $md-lg {
+         flex-direction row
+         justify-content space-around
+         max-width 1300px
+      }
+   }
+   .expertiseContainer img {
+      min-height 1px
+      @media $md-lg {
+         width 50%
+         margin-right $space-5
+      }
+   }
+   .expertiseContainer:nth-child(odd) img {
+      @media $md-lg {
+         order 1
+         margin 0 0 0 $space-5
+      }
+   }
+   .expertiseContainer .textContainer {
+      @media $md-lg {
+         width 50%
+         max-width 400px
+      }
+   }
+   .expertiseContainer h3 {
+      text-align center
+      @media $sm {
+         margin-top $space-2
+      }
+   }
+   .expertiseContainer p {
+      margin-top $space-2
+   }
+
+}

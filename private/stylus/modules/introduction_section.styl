@@ -1,0 +1,59 @@
+.introductionSection {
+   display block
+   background-image url('../img/introduction.svg')
+   background-size contain
+   background-repeat no-repeat
+   @media $sm {
+      padding 0 $space-3
+   }
+
+
+
+
+
+   .textContainer {
+      margin 20% auto 0
+      @media $md-lg {
+         width 60%
+         max-width 1000px
+      }
+   }
+   p {
+      @media $md-lg {
+         padding-left 25%
+      }
+   }
+   .socialLinksContainer {
+      flex-direction row
+      flex-wrap wrap
+      margin-top $space-3
+      @media $md-lg {
+         padding-left calc(30% - 10px)
+      }
+   }
+   .socialLinksContainer a {
+      margin-left 20px
+   }
+   .socialLinksContainer a:before {
+      content ''
+      display block
+      position absolute
+      width 5px
+      height 5px
+      top 50%
+      left -10px
+      transform translateY(-50%)
+      border-radius 50%
+      background-color $color-blue2
+   }
+
+
+
+
+
+   .divider {
+      width 150px
+      margin $space-5 auto
+   }
+
+}

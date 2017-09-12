@@ -1,0 +1,59 @@
+.siteFooter {
+   position fixed
+   justify-content space-around
+   padding $space-5 $space-1
+   left 0
+   bottom 0
+   @media $md-lg {
+      height 350px
+   }
+   @media $sm {
+      height 300px
+   }
+
+
+
+
+
+   .socialMediaContainer {
+      flex-direction row
+      justify-content center
+   }
+   .socialMediaContainer a {
+      @media $md-lg {
+         width 50px
+         height 50px
+      }
+      @media $sm {
+         width 40px
+         height 40px
+      }
+   }
+   .socialMediaContainer a:not(:first-child) {
+      margin-left $space-1
+   }
+
+
+
+
+
+   .handshakeIcon {
+      @media $md-lg {
+         width 100px
+      }
+      @media $sm {
+         width 50px
+      }
+   }
+
+
+
+
+
+   .copyright {
+      margin-top 0
+      font-size $font-1
+      text-align center
+   }
+
+}

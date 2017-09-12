@@ -1,0 +1,310 @@
+.siteHeader {
+   position fixed
+   z-index 1
+   flex-direction row
+   justify-content space-between
+   top 0
+   left 0
+   @media $md-lg {
+      height 90px
+      padding 0 $space-5
+   }
+   @media $sm {
+      height 60px
+      padding 0 $space-2
+   }
+   &:before {
+      fullBox()
+      content ''
+      transform translateY(-100%)
+      transition transform .2s ease-in-out
+      background-color $color-white1
+   }
+   &:hover:before {
+      @media $lg {
+         transform translateY(0)
+      }
+   }
+   &.js-state2:before {
+      transform translateY(0)
+   }
+
+
+
+
+
+   .fhokeLogo {
+      @media $md-lg {
+         width 200px
+      }
+      @media $sm {
+         width 170px
+      }
+   }
+
+
+
+
+
+   .siteNavOpenButton {
+      width 25px
+      height 18px
+      margin-left auto
+   }
+   .siteNavOpenButton span {
+      position absolute
+      width 100%
+      height 2px
+      left 0
+      background-color $color-blue2
+   }
+   .siteNavOpenButton span:nth-child(1) {
+      top 0
+   }
+   .siteNavOpenButton span:nth-child(2) {
+      top 50%
+      transform translateY(-50%)
+   }
+   .siteNavOpenButton span:nth-child(3) {
+      bottom 0
+   }
+
+
+
+
+
+   .siteNav {
+      position fixed
+      align-items flex-start
+      height 100%
+      top 0
+      right 0
+      transform translateX(100%)
+      transition transform .3s ease-in-out .5s
+      background-color $color-blue2
+      @media $md-lg {
+         padding $space-4
+      }
+      @media $lg {
+         width 40%
+         padding $space-5 $space-5 * 1.5
+      }
+      @media $md {
+         width 70%
+      }
+      @media $sm {
+         width 90%
+         padding $space-3
+      }
+   }
+   .siteNav.js-active {
+      transform translateX(0)
+      transition-delay 0s
+   }
+
+
+
+
+
+   .siteNavCloseButton {
+      position absolute
+      width 23px
+      height 23px
+      @media $md-lg {
+         top 35px
+         right $space-5
+      }
+      @media $sm {
+         top $space-2
+         right $space-2
+      }
+   }
+   .siteNavCloseButton:before,
+   .siteNavCloseButton:after {
+      content ''
+      display block
+      position absolute
+      width 100%
+      height 2px
+      top 50%
+      background-color $color-white1
+   }
+   .siteNavCloseButton:before {
+      transform translateY(-50%) rotate(45deg)
+   }
+   .siteNavCloseButton:after {
+      transform translateY(-50%) rotate(-45deg)
+   }
+
+
+
+
+
+
+   .siteNav a {
+      color $color-white1
+   }
+
+
+
+
+
+
+   .siteNav .navLinksList a {
+      font-weight 700
+      white-space nowrap
+      background-color $color-blue2
+      @media (min-width 1446px) {
+         font-size $font-8
+      }
+      @media (max-width 1445px) {
+         font-size $font-7
+      }
+      @media (max-width 1200px) {
+         font-size $font-6
+      }
+      @media $sm {
+         margin-top ($space-1 / 2)
+         font-size $font-4
+      }
+   }
+
+   .siteNav .navLinksList li,
+   .siteNav .socialLinksList li {
+      display flex
+      overflow hidden
+   }
+   .siteNav .navLinksList a,
+   .siteNav .socialLinksList a {
+      display flex
+      overflow hidden
+      transform translateY(100%)
+      transition transform .1s ease-in-out
+   }
+   .siteNav.js-slideLinks a {
+      transform translateY(0)
+   }
+
+   .siteNav .navLinksList li:nth-child(1) a {
+      transition-delay: .5s
+   }
+   .siteNav .navLinksList li:nth-child(2) a {
+      transition-delay: .45s
+   }
+   .siteNav .navLinksList li:nth-child(3) a {
+      transition-delay: .4s
+   }
+   .siteNav .navLinksList li:nth-child(4) a {
+      transition-delay: .3s
+   }
+   .siteNav .socialLinksList li:nth-child(1) a {
+      transition-delay: .25s
+   }
+   .siteNav .socialLinksList li:nth-child(2) a {
+      transition-delay: .2s
+   }
+   .siteNav .socialLinksList li:nth-child(3) a {
+      transition-delay: .15s
+   }
+   .siteNav .socialLinksList li:nth-child(4) a {
+      transition-delay: .1s
+   }
+   .siteNav .socialLinksList li:nth-child(5) a {
+      transition-delay: .05s
+   }
+   .siteNav .socialLinksList li:nth-child(6) a {
+      transition-delay: 0s
+   }
+
+   .siteNav.js-slideLinks .navLinksList li:nth-child(1) a {
+      transition-delay: .3s
+   }
+   .siteNav.js-slideLinks .navLinksList li:nth-child(2) a {
+      transition-delay: .35s
+   }
+   .siteNav.js-slideLinks .navLinksList li:nth-child(3) a {
+      transition-delay: .4s
+   }
+   .siteNav.js-slideLinks .navLinksList li:nth-child(4) a {
+      transition-delay: .45s
+   }
+   .siteNav.js-slideLinks .socialLinksList li:nth-child(1) a {
+      transition-delay: .5s
+   }
+   .siteNav.js-slideLinks .socialLinksList li:nth-child(2) a {
+      transition-delay: .55s
+   }
+   .siteNav.js-slideLinks .socialLinksList li:nth-child(3) a {
+      transition-delay: .6s
+   }
+   .siteNav.js-slideLinks .socialLinksList li:nth-child(4) a {
+      transition-delay: .65s
+   }
+   .siteNav.js-slideLinks .socialLinksList li:nth-child(5) a {
+      transition-delay: .7s
+   }
+   .siteNav.js-slideLinks .socialLinksList li:nth-child(6) a {
+      transition-delay: .75s
+   }
+
+   .siteNav .navLinksList a:before {
+      content attr(data-content)
+      position absolute
+      width 0
+      overflow hidden
+      top 0
+      left 0
+      background-color $color-blue2
+      color $color-gray2
+      transition width .35s ease-in-out
+   }
+   .siteNav .navLinksList a:hover:before {
+      width 100%
+   }
+
+
+
+
+
+
+
+   .siteNav .socialLinksList {
+      margin-top auto
+      padding-top $space-2
+   }
+   .siteNav .socialLinksList li:not(:first-child) {
+      margin-top 4px
+   }
+   .siteNav .socialLinksList a {
+      display flex
+      align-items center
+      @media (min-width 1446px) {
+         font-size 20px
+      }
+   }
+   .siteNav .socialLinksList a:before {
+      content ''
+      display block
+      width 0
+      height 1px
+      margin 2px 5px 0 0
+      background-color $color-white1
+      transition width .2s ease
+   }
+   .siteNav .socialLinksList a:hover:before {
+      width 10px
+   }
+
+
+
+
+
+
+   .copyright {
+      margin-top $space-3
+      color rgba($color-white1, .5)
+      font-size $font-1
+   }
+
+
+}

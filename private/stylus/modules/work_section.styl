@@ -1,0 +1,129 @@
+.workSection {
+   min-height 1px
+
+
+
+
+
+
+   .textContainer {
+      max-width 1000px
+      padding 0 10%
+   }
+
+
+
+
+
+   .workGrid {
+      flex-direction row
+      flex-wrap wrap
+      min-height 1px
+      margin-top $space-5
+   }
+   .column {
+      display block
+      @media $lg {
+         width 25%
+      }
+      @media $md {
+         width 50%
+      }
+      @media $sm {
+         width 100%
+      }
+   }
+   .cover {
+      fullBox()
+      display flex
+      flex-direction column
+      justify-content center
+      align-items center
+      opacity 0
+      padding 20px
+      transition opacity .3s ease .5s
+      background-color $color-white1
+   }
+   .imgContainer:hover .cover {
+      opacity 1
+      transition opacity .3s ease
+   }
+   .imgContainer img {
+      min-height 1px
+   }
+   .cover > * {
+      overflow hidden
+      text-align center
+   }
+   .cover h3 {
+      font-family 'Playfair Display', serif
+      font-weight 900
+      font-size $font-5
+      color $color-black1
+   }
+   .cover p {
+      margin-top 5px
+      font-size 12px
+   }
+   .cover span {
+      display block
+      transform translateY(100%)
+      transition transform 1s cubic-bezier(0.37, 0.31, 0.2, 0.85)
+   }
+   .imgContainer:hover span {
+      transform translateY(0)
+   }
+
+
+
+
+
+   .latestProjectsButton {
+      margin-top $space-3
+      padding 10px 15px
+      border 2px solid $color-blue1
+      border-radius 5px
+      transition all .3s ease
+      font-size $font-1
+   }
+   .latestProjectsButton:hover {
+      background-color $color-blue1
+      color $color-gray1
+   }
+
+
+
+
+
+   blockquote {
+      width 100%
+      max-width 800px
+      margin-top $space-5 * 2
+      padding  0 50px
+      font-family 'Playfair Display', serif
+      text-align center
+      @media $md-lg {
+         font-size $font-7
+      }
+      @media $sm {
+         font-size 30px
+      }
+   }
+   blockquote span {
+      display block
+      margin-top $space-2
+      font-family 'Lato', sans-serif
+      font-size $font-3
+   }
+
+
+
+
+
+   .endImgContainer {
+      display block
+      min-height 1px
+      margin-top $space-5 * 2
+   }
+
+}

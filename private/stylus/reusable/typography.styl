@@ -1,0 +1,80 @@
+[class$='Title'] {
+   font-family 'Playfair Display', serif
+   color $color-blue1
+}
+.smallTitle {
+   font-size 26px
+}
+
+.mediumTitle {
+   font-weight 900
+   @media $md-lg {
+      font-size 40px
+   }
+   @media $sm {
+      font-size 26px
+   }
+}
+
+.largeTitle {
+   font-size 270px
+   line-height 1
+}
+
+
+
+
+
+p {
+   text-align justify
+   color $color-blue2
+   @media $md-lg {
+      margin-top $space-4
+   }
+   @media $sm {
+      margin-top $space-3
+   }
+}
+.decoratedParagraph {
+   @media $md-lg {
+      padding-left 25%
+   }
+}
+.decoratedParagraph:before {
+   @media $md-lg {
+      content ''
+      position absolute
+      display block
+      width 20%
+      height 5px
+      left 0
+      margin-top 8px
+      background-color $color-blue1
+   }
+}
+
+
+
+
+
+.standardLink {
+   color $color-blue2
+   background-image: linear-gradient(to right, $color-gray2 50%, transparent 0%);
+   background-position: bottom;
+   background-size: 5px 1px;
+   background-repeat: repeat-x;
+   padding-bottom 2px
+}
+.standardLink:after {
+   content ''
+   display block
+   position absolute
+   width 0
+   height 2px
+   bottom -1px
+   transition width .3s ease
+   background-color $color-blue2
+}
+.standardLink:hover:after {
+   width 100%
+}
