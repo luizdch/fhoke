@@ -8,4 +8,4 @@
 //=require ../local/modules/jumbotron.js
 //=require ../local/modules/site_nav.js
 //=require ../local/modules/parallax_worker.js
-//=require ../local/modules/slide_anime.js
+// =require ../local/modules/slide_anime.js

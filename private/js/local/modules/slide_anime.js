@@ -32,9 +32,4 @@ $(function() {
    }
    setWorkGridSlideAnime()
 
-   $(window).on('resize', function() {
-      setIntroductionSectionSlideAnime()
-      setWorkGridSlideAnime()
-   })
-
 })
